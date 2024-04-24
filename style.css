@@ -1,0 +1,40 @@
+.container {
+    background-color: #ddd;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+.sample {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #999;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    margin: 0 10px;
+    background-color: orange; 
+    text-align: center; 
+    position: relative; 
+}
+
+.sample h2 {
+    text-shadow: 2px -2px 0px #fff, -2px 2px 0px #444;
+    margin-top: 0; 
+}
+
+.sample::before {
+    content: '';
+    position: absolute; 
+    top: -10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 50px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.574); 
+    border-radius: 10px 10px 0 0;
+}
+
+
+
+
